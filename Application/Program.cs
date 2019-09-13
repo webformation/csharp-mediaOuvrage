@@ -32,6 +32,14 @@ namespace Application
             Console.WriteLine(gates.getOuvrage());
             catalogue.Supprime(l1);
             Console.WriteLine(gates.getOuvrage());
+            Console.WriteLine(catalogue.Liste.Last());
+            Auteurs auteurs = new MediaLibrary.Auteurs();
+            auteurs.ajout(gates);
+            auteurs.ajout(new Auteur("Dupond", "Marie"));
+            Auteur recherche = auteurs.trouve("Gates", "Bill");
+            Console.WriteLine(recherche);
+            recherche = auteurs.search("Gates", "Bill");
+            Console.WriteLine(recherche);
         }
     }
 }

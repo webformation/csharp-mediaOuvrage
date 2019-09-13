@@ -9,6 +9,7 @@ namespace MediaLibrary
     public class Catalogue
     {
         List<Document> fondMediatheque = new List<Document>();
+        public List<Document> Liste {  get { return fondMediatheque; } }
         public void Ajoute(Document d)
         {
             if (!fondMediatheque.Contains(d))

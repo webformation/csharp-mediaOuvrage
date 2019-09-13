@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Auteur.cs" />
+    <Compile Include="Auteurs.cs" />
     <Compile Include="Catalogue.cs" />
     <Compile Include="Document.cs" />
     <Compile Include="IEmpruntable.cs" />
